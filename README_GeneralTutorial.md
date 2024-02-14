@@ -1,27 +1,28 @@
 # Sitrineo Analysis M2 2024
 ## How to run the analysis ?
 
-Sitrineo (Silicon Tracker with International Education Objective) data are analysed using the TAF software.
+Sitrineo (Silicon Tracker with International Education Objective) data are analysed using the TAF software.  
 
 ### How to use TAF software?
 
-Open a terminal and cd in the folder where taf is installed (e.g. cd home/dphe1/physics/taf)
-Run taf with the command : taf -run [RRRR] -cfg [config path] (e.g. taf -run 1110 -cfg ./config/sitrineo-m2-B.cfg)
-NB : to open the graphic interface, one need to add -guiw at the end of the command (e.g. taf -run 1110 -cfg ./config/sitrineo-m2-B.cfg -guiw)
-If running taf without graphical interface, one need to call the function with the command : gTAF->GetRaw()->[function(parameter)] (e.g. gTAF->GetRaw()->SitrineoAlign(100000))
-The plots are displayed on screen and saved in taf/Results/
+Open a terminal and cd in the folder where taf is installed (e.g. cd home/dphe1/physics/taf).  
+Run taf with the command : taf -run [RRRR] -cfg [config path] (e.g. taf -run 1110 -cfg ./config/sitrineo-m2-B.cfg).  
+NB : to open the graphic interface, one need to add -guiw at the end of the command (e.g. taf -run 1110 -cfg ./config/sitrineo-m2-B.cfg -guiw).  
+If running taf without graphical interface, one need to call the function with the command : gTAF->GetRaw()->[function(parameter)] (e.g. gTAF->GetRaw()->SitrineoAlign(100000)).  
+The plots are displayed on screen and saved in taf/Results/ .  
 
 ### Name of the runs
 
-We name the runs with up to 4 numbers (RRRR) using the following convention :
-1st number (R...) is equal to 1 if there is a magnetic field B, 0 without B
-2nd number (.R..) is equal to the diameter of the collimator in mm (0 for runs without collimator)
-3rd number (..R.) is equal to 1 if there is a source, 0 without the source
-4th number (...R) is the number of runs with such config before this run (i.e. 0 for the first run with a given config, 1 for the second etc.)
-Like for usual numbers, 0 on the left are not written so run 0010 would be run 10.
+We name the runs with up to 4 numbers (RRRR) using the following convention :   
+1st number (R...) is equal to 1 if there is a magnetic field B, 0 without B   
+2nd number (.R..) is equal to the diameter of the collimator in mm (0 for runs without collimator)   
+3rd number (..R.) is equal to 1 if there is a source, 0 without the source   
+4th number (...R) is the number of runs with such config before this run (i.e. 0 for the first run with a given config, 1 for the second etc.)   
+Like for usual numbers, 0 on the left are not written so run 0010 would be run 10.   
 
-For example, the first run with source, magnetic field and 1mm collimator will be named 1110. The second one would be 1111, and so on.
-NB: Event 0 cannot exist (otherwise taf isn't happy...) so a run without source, magnetic field nor collimator would exceptionally be named 1, the second one 2, etc.
+
+For example, the first run with source, magnetic field and 1mm collimator will be named 1110. The second one would be 1111, and so on.   
+NB: Event 0 cannot exist (otherwise taf isn't happy...) so a run without source, magnetic field nor collimator would exceptionally be named 1, the second one 2, etc.   
 
 ### Functions that are used
 
