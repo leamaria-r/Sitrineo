@@ -31,3 +31,18 @@ NB: Event 0 cannot exist (otherwise taf isn't happy...) so a run without source,
 The function also requires a run with magnetic field, a source and a collimator (e.g. run 1110 or 1111)
 Warning: not displayed in graphical interface (for now)
 * DisplayCumulatedRawData2D() (or "Create noisy pixel map" if using graphical interface) is used to create a map of the noisy pixels. It must be used with a run without magnetic field nor source (hence no collimator either), e.g. 1 or 2, and a high number of events (e.g. 200000). This map can then be used to mask hot pixels.
+
+
+## Data acquisition with Sitrineo 
+
+First, one need to turn on the power supply and turn on the Sitrineo DAQBoard. After waiting a few seconds, connect your computer to the DAQBoard by entering the following command in the terminal : ssh root@192.168.1.12   
+Then enter the following commands to start data acquisition :  
+sitrireset  
+sitriconf   
+sitristart  
+daqSoC_v3 -RunNumber 1210 -NumEventsToRead 100000 -triggerSW yes -SteptriggerMonitor 2000 -JtagInit work -Delay 1 -DataSaveLocal yes  
+(for run 1210, otherwise change run number) 
+
+After that, you can open a new terminal and go to your own repository to copy the files there with :  
+scp -r root@192.168.1.12:DataStore/run1213 1213   
+(for run 1213, otherwise change run number)
