@@ -27,3 +27,7 @@ useful to understand how to analyse data with TAF software having a given run an
 ## our work
 
 explains what we did in this project and what we added to the existing code
+
+# Notes
+
+for more details, see https://github.com/jeromebaudot/taf
