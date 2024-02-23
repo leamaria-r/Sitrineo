@@ -1,8 +1,14 @@
-# Sitrineo Analysis M2 2024
+# Sitrineo Analysis M2 2024  
 
-The goal of this project is to use the Sitrineo (Silicon Tracker with International Education Objective) tracker and measure the energy spectrum emitted by a Sr-90 radioactive source (beta emitter). Data are analysed using the TAF software. 
+The goal of this project is to use the Sitrineo (Silicon Tracker with International Education Objective) tracker and measure the energy spectrum emitted by a Sr-90 radioactive source (beta emitter). Data are analysed using the TAF software.  
 
-## How to run the analysis ?
+## How to run the analysis ?  
+
+The requirements to execute the code are :  
+    -root : version 6.10/04
+    -gcc : version 7.5
+
+The computer's operating system is Ubuntu version 7.5 (3ubuntu1~18.04)
  
 ### How to use TAF software?
 
