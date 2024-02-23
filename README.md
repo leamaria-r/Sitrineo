@@ -6,16 +6,16 @@ contains the code of TAF software, separated in different directories :
 - **src** with all the source code
 - **macros** with some C macros
 
-## config
+## Config
 contains the config used to analyse data with TAF
 
-## results
+## Results
 contains the results of the TAF analysis. Each run has its own directory
 
-## runs
+## Runs
 contains the data acquired by Sitrineo. Each run has its own directory
 
-## physics
+## Sitrineo Physics
 contains the code to simulate the activity of the source and the energy loss in the tracker
 
 # README
