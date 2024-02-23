@@ -37,7 +37,8 @@ The computer's operating system is Ubuntu version 7.5 (3ubuntu1~18.04)
  
 ### How to use TAF software?
 
-Open a terminal and cd in the folder where taf is installed (e.g. cd home/dphe1/physics/taf).  
+Open a terminal and cd in the folder where taf is installed (e.g. cd home/dphe1/physics/taf).
+Compile taf with the command : maketaf
 Run taf with the command : taf -run [RRRR] -cfg [config path] (e.g. taf -run 1110 -cfg ./config/sitrineo-m2-B.cfg).  
 NB : to open the graphic interface, one need to add -guiw at the end of the command (e.g. taf -run 1110 -cfg ./config/sitrineo-m2-B.cfg -guiw).  
 If running taf without graphical interface, one need to call the function with the command : gTAF->GetRaw()->[function(parameter)] (e.g. gTAF->GetRaw()->SitrineoAlign(100000)).  
