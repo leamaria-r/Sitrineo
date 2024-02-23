@@ -17,3 +17,13 @@ contains the data acquired by Sitrineo. Each run has its own directory
 
 ## physics
 contains the code to simulate the activity of the source and the energy loss in the tracker
+
+# README
+
+## general tutorial
+
+useful to understand how to analyse data with TAF software having a given run and config. Also explains how to acquire data with Sitrineo
+
+## our work
+
+explains what we did in this project and what we added to the existing code
