@@ -1,5 +1,5 @@
 # The code
-  The Sitrineo Project file contains :\n
+  The Sitrineo Project file contains :  
   -Various functions to calculate analytically the activity of our radioactive source
   -A Class to describe the physical aspect of the project
 
