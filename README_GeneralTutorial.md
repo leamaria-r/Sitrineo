@@ -1,6 +1,31 @@
 # Sitrineo Analysis M2 2024  
 
-The goal of this project is to use the Sitrineo (Silicon Tracker with International Education Objective) tracker and measure the energy spectrum emitted by a Sr-90 radioactive source (beta emitter). Data are analysed using the TAF software.  
+The goal of this project is to use the Sitrineo (Silicon Tracker with International Education Objective) tracker and measure the energy spectrum emitted by a Sr-90 radioactive source (beta emitter). Data are analysed using the TAF software, based on C++ and ROOT. This is a master students project made by Mattéo Maushart and Léa-Maria Rabour. For more details, see https://github.com/jeromebaudot/taf
+
+## Repositories
+
+### code
+contains the code of TAF software, separated in different directories :
+- **include** with all the .h files included in the C++ codes in source
+- **src** with all the source code
+- **macros** with some C macros
+
+README explains the modifications made to the existing code.
+
+### Config
+contains the config used to analyse data with TAF
+
+### Results
+contains the results of the TAF analysis. Each run has its own directory
+
+### Runs
+contains the data acquired by Sitrineo. Each run has its own directory
+
+### Sitrineo Physics
+contains the code to simulate the activity of the source and the energy loss in the tracker
+
+### Plots
+contains the main plots obtained with the analysis
 
 ## How to run the analysis ?  
 
