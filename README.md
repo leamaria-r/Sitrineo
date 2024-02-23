@@ -30,8 +30,8 @@ contains the main plots obtained with the analysis
 ## How to run the analysis ?  
 
 The requirements to execute the code are :  
-    -root : version 6.10/04
-    -gcc : version 7.5
+    -root : version 6.10/04 (To check your root version : root-config --version)  
+    -gcc : version 7.5 (To check your gcc version : gcc -v)  
 
 The computer's operating system is Ubuntu version 7.5 (3ubuntu1~18.04)
  
