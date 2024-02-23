@@ -1,0 +1,8 @@
+
+Run 116 over 200000 events
+ Pixel (row,col) with occurence higher than 0.5 percent
+
+** Plane 1 BEWARE THIS MAY NOT BE THE INPUT NUMBER NEEDED FOR BoardReader!
+** Plane 2 BEWARE THIS MAY NOT BE THE INPUT NUMBER NEEDED FOR BoardReader!
+** Plane 3 BEWARE THIS MAY NOT BE THE INPUT NUMBER NEEDED FOR BoardReader!
+** Plane 4 BEWARE THIS MAY NOT BE THE INPUT NUMBER NEEDED FOR BoardReader!
