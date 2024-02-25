@@ -356,7 +356,7 @@ Simu=a.Physic(1e6,plane)
 print(f"The solid angle associated to our {radius_colli}cm opening window collimator at {dist_source_colli}cm is: {angle}sr \n This collimator reduce our number of electron going through to {passage} electrons")
 print("An electron of 1 MeV kinetic energy at source should keep {} MeV when arriving at the last plane of the Sitrineo Tracker".format(np.round(Simu[2]/1e6,3)))
 #%% Calcul GeoCut Plan 1 et 4
-cut_plane1=0.11447 #cm #We can calculate that with this radius of circle, on the first plane (0.6 cm after collimator), we keep the same solid angle as previously, it means that our particule should, neglecting scattering in the air, be in this circle
+cut_plane1=0.22893 #cm #We can calculate that with this radius of circle, on the first plane (0.6 cm after collimator), we keep the same solid angle as previously, it means that our particule should, neglecting scattering in the air, be in this circle
 b=Sitrineo(cut_plane1,4.75) 
 cercle=np.round(b.Steradian(),6)
 print("Our particule should remain in a circle of {} cm in the first plane".format(cut_plane1))
