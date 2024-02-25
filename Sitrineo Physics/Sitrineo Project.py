@@ -346,7 +346,7 @@ T_Sr=np.linspace(T_min_to_plane4,546e3,10000)
 T_Y=np.linspace(T_min_to_plane4,2.28e6,10000)
 plane=np.array([0,0.1,2.7,2.8]) #Distance of planes according to z, with z=0 in the foreground
 dist_source_colli=4.15 #cm
-radius_colli=0.1 #cm
+radius_colli=0.2 #cm
 
 a=Sitrineo(radius_colli, dist_source_colli)
 
